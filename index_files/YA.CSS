@@ -1,0 +1,264 @@
+*{
+   
+    font-family:  "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+    }
+    .fondo{
+        background-color: black;
+    
+    
+        min-width: 100%;
+       min-height: 100%;
+        margin-top: -19px;
+        margin-left: -5px;
+        height: 123px;
+    
+    
+    }
+        .onda{
+        margin-top: 20px;
+        margin-left: 45px;
+        border-radius: 7px;
+        
+    }
+    
+    .menu{
+        text-align: right;
+    margin-top: -46px;
+        color: #f79c21;
+        margin-right: 20px;
+    
+    }
+    .mlink{
+        display: inline-block;
+        list-style: none;
+    font-size: 17px;
+    
+    }
+    .dlink{
+        text-decoration: none;
+        color: #f79c21;
+        font-family:  Quicksand,Arial, Helvetica, sans-serif;
+        padding: 7px;
+        position: relative;
+        /*background-color: blue;*/
+
+    
+    }
+    .dlink::before{
+   content: "";
+    width: 0px;
+    
+    height: 1px;
+    
+    position: absolute;
+    bottom: 0%;
+    transition: all 500ms;
+    
+    background-color: #f79c21;
+    
+    
+    }
+    .linei::before{
+    left: 0;
+    }
+    .dlink:hover::before{
+        width: 100%;  
+
+}
+
+.menus ul{
+    text-decoration: none;
+display: flex;
+margin-left: 100px;
+
+}
+.menus li{
+    margin-top: 25px;
+        list-style: none;
+     
+}
+.menus li a{
+    padding: 10px 15px;
+    background-color: #555555;
+    font-size: 14px;
+
+}
+.menus{
+    text-align: center;
+}
+
+.menus li a:hover{
+background-color: grey;
+}
+/*imagenes*/
+.project.title{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 88px 0;
+max-width: 1200px;
+margin-top: -185px;
+}
+.subtitle{
+    color: var(--color-primary);
+    margin-bottom: 35px;
+}
+.projects{
+background-color: black;    margin-left: -6px;
+
+    
+}
+.projects__grid{
+    display: grid;
+    height: 550px;
+    grid-template-areas:
+     "img1 img1 img2 img3"
+    "img1 img1 img4 img5";
+    gap: 10px;
+}
+.projects__item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+.projects__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.projects__item:nth-of-type(1){
+    grid-area: img1;
+}
+.projects__item:nth-of-type(2){
+    grid-area: img2;
+}
+.projects__item:nth-of-type(3){
+    grid-area: img3;
+}
+.projects__item:nth-of-type(4){
+    grid-area: img4;
+}
+.projects__item:nth-of-type(5){
+    grid-area: img5;
+}
+.projects__hover{
+    position: absolute;
+    background-color: #dc143c8c;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #f79c21;
+        text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+transition: transform .6s ease-in-out;
+}
+.projects__item:hover .projects__hover{
+ transform: translateX(0%);
+}
+.projects__icon{
+    margin-top: 10px;
+font-size: 30px;
+}
+
+       /*footer*/
+
+.footer{
+        background-color: black;
+;
+    margin-left: -9px;
+    }
+.footer__grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 0px;
+
+text-decoration: none;
+}
+.nav__items{
+    text-decoration: none;
+padding: 12px;
+margin-left: -14px;
+}
+.footer__title{
+    font-weight:400;
+    color: #f79c21;
+        font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: -65px;
+}
+.footer__icons{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+
+.footer__container-icons{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+color: #f79c21;    text-align: center;
+    border: 1px solid #f79c21;
+    border-radius: 50%;
+    }
+ .footer__icon{
+     color: inherit;
+     font-size: 30px;
+     text-decoration: none;
+     color: #f79c21;
+     text-align: center;
+ }
+ .fab.footer__icon{
+     line-height: 60px;
+     margin-top: -5px;
+ }
+/*     <p>  <img class="imgs" src="iter.jpg" alt=""></p>
+          <p><img class="imgs" src="nave.png" alt=""></p>
+          <p><img class="imgs" src="Cherenkov.jpg" alt=""></p>
+          <p><img class="imgs" src="gusano.jfif" alt=""> </p>
+ 
+          .imgs{
+    width: 100%;
+    height: 100%;
+    margin-left: -5px;
+    margin-top: -5px;
+    color: blueviolet;
+    margin-top: -20px;
+    display: grid;
+    grid-template-areas: " iter iter nave chrenkov"
+    "iter iter gusano";
+    
+    }*/
+
+.dark-mode-button{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 15px;
+    background: firebrick;
+border-radius: 5px;
+margin-left: 156px;
+}
+
+html.dark-mode{
+    filter: invert(100%);
+}
+
+html.dark-mode img{
+    filter: invert(100%);
+}
